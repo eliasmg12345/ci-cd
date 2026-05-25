@@ -53,7 +53,7 @@ jobs:
         run: |
           echo "deploying to $ENVIRONMENT"
       
-      - name: solo log si es dry-run
+      - name: solo log si es dry_run
         if: ${{inputs.dry_run}}
         run: |
           echo "dry run: no changes applied"
